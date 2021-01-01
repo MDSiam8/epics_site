@@ -1,0 +1,279 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    animation: linear fadeIn .2s;
+}
+
+.header{
+    background-color: rgb(255, 255, 122);
+    width: 100%;
+    height: 50px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: darkgrey 0px 3px;
+    position: relative;
+}
+
+#top_link_group{
+    position: absolute;
+    bottom: 10%;
+    right: 1%;
+}
+
+.link_text{
+    padding-left: 5px;
+    color: navy;
+    vertical-align: bottom;
+    text-decoration: none;
+}
+
+.link_text:hover{
+    color: #9ac4e9;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#logo{
+    height: 50px; /*This should be same as header height*/
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+#introduction{
+    text-align: justify;
+}
+
+h1, p{
+    margin: 10px;
+    color: navy;
+}
+
+.text_section{
+    width: 720px;
+    margin: auto;
+}
+
+::selection{
+    background-color: rgba(255, 255, 0, 0.288);
+    text-shadow: rgba(161, 174, 247, 0.459) -2.5px 1.5px;
+    color: #41a6ff;
+}
+
+
+
+#student_endeavors{
+    margin: auto;
+    width: 760px;
+}
+
+
+p > span > a:hover{
+    background-color: rgb(255, 255, 122);
+    
+}
+
+
+.accordion {
+    box-sizing: border-box;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+}
+
+.accordion-select {
+    cursor: pointer;
+    margin: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.accordion-title {
+    position: relative;
+}
+
+.accordion-title:not(:nth-last-child(2))::after {
+    border: 1px solid transparent;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.accordion-title span {
+    bottom: 0px;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.accordion-content {
+    box-sizing: border-box;
+    overflow: auto;
+    position: relative;
+    transition: margin 0.3s ease 0.1s;
+}
+
+.accordion-select:checked + .accordion-title + .accordion-content {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+/* Generated styles starts here */
+
+.accordion {
+    border-radius: 8px;
+    flex-direction: column;
+    height: auto;
+} 
+
+.accordion-title,
+.accordion-select  {
+    transition: .35s;
+    background-color: rgb(255, 255, 122);
+    color: navy;
+    width: 100%;
+    height: 65px;
+    font-size: 15px;
+}
+
+.accordion-select {
+    margin-bottom: -65px;
+    margin-right: 0;
+}
+
+.accordion-title:not(:nth-last-child(2))::after {
+    border-bottom-color: rgb(234, 234, 234);
+    border-right-color: transparent;
+} 
+
+.accordion-select:hover + .accordion-title,
+.accordion-select:checked + .accordion-title {
+    background-color: #9ac4e9;
+    color: white;
+} 
+
+ .accordion-title span  {	
+    transform: rotate(0deg);
+    padding-left: 33px;
+    padding-right: 33px;
+    line-height: 65px;
+} 
+
+.accordion-content {
+    background-color: #f7f7f7;
+    color: #7f8787;
+    height: 280px;
+    margin-bottom: -280px;
+    margin-right: 0;
+    padding: 30px;
+    width: 100%;
+} 
+
+
+.mySlides {
+	display: none;
+	height: 100%;
+}
+.mySlides img {
+	width: 100%;
+	height: 100%;
+}
+.slideshow-container {
+	overflow: hidden;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+	width: 700px;
+	height: 300px;
+}
+
+/************CSS Animation***********/
+
+.animated { 
+   -webkit-animation-name: fadeIn; 
+           animation-name: fadeIn; 
+   -webkit-animation-duration: 1s; 
+           animation-duration: 1s; 
+} 
+@-webkit-keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;} 
+} 
+@keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;} 
+} 
+.fadeIn { 
+    -webkit-animation-name: fadeIn; 
+    animation-name: fadeIn; 
+}
+
+.footer{
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.projects_heading1{
+    background-color: navy;
+    color: white;
+    padding: 10px;
+}
+
+.projects_heading2{
+    color:  navy;
+    background-color: #9ac4e9;
+    padding: 10px;
+}
+
+#logo{
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-window-dragging: none;
+    cursor: pointer;
+}
+
+
+.partners_and_resources{
+    width: 720px;
+    margin: auto;
+    text-align: center;
+}
+
+.partners_and_resources_links{
+    margin-top: 15px;
+    width: auto;
+    display: inline-block; 
+    border-radius: 3px;
+    border: navy 4px solid;
+    box-sizing: border-box;
+}
+
+.partners_and_resources_links img{
+    height: auto;
+    display: block;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.partners_and_resources_links:hover{
+    filter: opacity(.6);
+    transition: .5s ease-out;
+}

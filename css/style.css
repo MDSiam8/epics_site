@@ -1,0 +1,149 @@
+.blog_section{
+    background-color: white;
+    box-shadow: rgba(0, 0, 128, 0.541) 3.5px 4px;
+    margin: auto;
+    width: 720px;
+    padding: 15px;
+    border-radius: 2px;
+}
+
+p{
+    text-align: justify;
+}
+
+html{
+    background-color: #9ac4e98a;
+    animation: fadeIn linear .2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+/* This is the CSS for the Slides */
+.img_container{
+	box-sizing: border-box;
+	position: relative;
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+	background-color: black;
+	animation: fadeIn .4s linear;
+	border-radius: 3px;
+	box-shadow: #85b9e6 3px 3px;
+}
+
+.slide_img{
+	width: auto;
+	border-radius: 3px;
+	margin: auto;
+	max-height: 300px;
+	text-align: center;
+	display: block;
+}
+
+.imgSlides{
+	display: none;
+}
+
+.prev,
+.next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -6%;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: rgba(128, 128, 128, 0.171);
+}
+
+
+.next{
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover{
+	transition: .3s ease-in;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+  
+  /* Number text (1/3 etc) */
+.captions{
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.301);
+}
+  
+
+.blog_section a{
+    color: #9ac4e9;
+    text-decoration: none;
+}
+  
+.blog_section a:hover{
+  transition: ease-in .4s;
+  color: navy;
+}
+
+#nphs{
+  display: flex;
+  position: relative;
+}
+
+#boyer{
+  display: flex;
+  position: relative;
+}
+
+.column_1{
+  box-sizing: border-box;
+  width: 30%;
+  margin: auto;
+  position: relative;
+}
+
+.column_2{
+  box-sizing: border-box;
+  width: 40%;
+  margin: 0;
+  text-align: left;
+  margin-left: 1%;
+  position: relative;
+}
+
+.column_3{
+  width: 30%;
+  padding: 4px;
+  margin: 1%;
+  text-align: left;
+  position: relative;
+}
+
+.column_1 img{
+  -webkit-user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  border-radius: 3px;
+}
