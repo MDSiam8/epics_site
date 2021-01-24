@@ -2,6 +2,9 @@
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
+    --theme_color_1: rgb(255, 255, 122);
+    --theme_color_2: #9ac4e9;
+    --theme_color_3: navy;
 }
 
 html, body{
@@ -11,7 +14,7 @@ html, body{
 }
 
 .header{
-    background-color: rgb(255, 255, 122);
+    background-color: var(--theme_color_1);
     width: 100%;
     height: 50px;
     border-radius: 0px 0px 10px 10px;
@@ -27,13 +30,13 @@ html, body{
 
 .link_text{
     padding-left: 5px;
-    color: navy;
+    color: var(--theme_color_3);
     vertical-align: bottom;
     text-decoration: none;
 }
 
 .link_text:hover{
-    color: #9ac4e9;
+    color: var(--theme_color_2);
     transition: 0.3s;
     cursor: pointer;
 }
@@ -50,7 +53,7 @@ html, body{
 
 h1, p{
     margin: 10px;
-    color: navy;
+    color: var(--theme_color_3);
 }
 
 .text_section{
@@ -73,7 +76,7 @@ h1, p{
 
 
 p > span > a:hover{
-    background-color: rgb(255, 255, 122);
+    background-color: var(--theme_color_1);
     
 }
 
@@ -140,8 +143,8 @@ p > span > a:hover{
 .accordion-title,
 .accordion-select  {
     transition: .35s;
-    background-color: rgb(255, 255, 122);
-    color: navy;
+    background-color: var(--theme_color_1);
+    color: var(--theme_color_3);
     width: 100%;
     height: 65px;
     font-size: 15px;
@@ -159,7 +162,7 @@ p > span > a:hover{
 
 .accordion-select:hover + .accordion-title,
 .accordion-select:checked + .accordion-title {
-    background-color: #9ac4e9;
+    background-color: var(--theme_color_2);
     color: white;
 } 
 
@@ -232,14 +235,14 @@ p > span > a:hover{
 
 
 .projects_heading1{
-    background-color: navy;
+    background-color: var(--theme_color_3);
     color: white;
     padding: 10px;
 }
 
 .projects_heading2{
-    color:  navy;
-    background-color: #9ac4e9;
+    color:  var(--theme_color_3);
+    background-color: var(--theme_color_2);
     padding: 10px;
 }
 
@@ -258,16 +261,15 @@ p > span > a:hover{
 }
 
 .partners_and_resources_links{
-    margin-top: 15px;
     width: auto;
     display: inline-block; 
     border-radius: 3px;
-    border: navy 4px solid;
+    border: var(--theme_color_3) 4px solid;
     box-sizing: border-box;
 }
 
 .partners_and_resources_links img{
-    height: auto;
+    height: 40px;
     display: block;
     user-select: none;
     -webkit-user-drag: none;
