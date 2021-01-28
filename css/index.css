@@ -183,13 +183,13 @@ p > span > a:hover{
     width: 100%;
 } 
 
-.accordion-content::-webkit-scrollbar{
+::-webkit-scrollbar{
     background-color: rgba(0, 0, 0, 0.171);
-    width: 5px;
+    width: 6px;
 }
-.accordion-content::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb{
     background-color: rgba(0, 0, 122, 0.562);
-    border-radius: 7px;
+    border-radius: 8px;
 }
 .mySlides {
 	display: none;
