@@ -2,8 +2,12 @@
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
-    --theme_color_1: rgb(255, 255, 122);
-    --theme_color_2: #9ac4e9;
+    --color_1: 147, 212, 255; 
+    /* Variable color_1 is for adding variable support for the footer and selection color
+    any changes to THEME_color_1 should be changed in the color_1 variable
+    */
+    --theme_color_1: rgb(var(--color_1));
+    --theme_color_2: #47a4f7;
     --theme_color_3: navy;
 }
 
@@ -62,7 +66,8 @@ h1, p{
 }
 
 ::selection{
-    background-color: rgba(255, 255, 0, 0.288);
+    /* background-color: rgba(255, 255, 0, 0.288); */
+    background-color: rgba(var(--color_1), .20);
     text-shadow: rgba(161, 174, 247, 0.459) -2.5px 1.5px;
     color: #41a6ff;
 }
@@ -271,7 +276,7 @@ p > span > a:hover{
     width: auto;
     display: inline-block; 
     border-radius: 3px;
-    border: var(--theme_color_3) 4px solid;
+    border: var(--theme_color_3) 3px solid;
     box-sizing: border-box;
 }
 
