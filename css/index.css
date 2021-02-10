@@ -181,8 +181,8 @@ p > span > a:hover{
 .accordion-content {
     background-color: #f7f7f7;
     color: #7f8787;
-    height: 280px;
-    margin-bottom: -280px;
+    height: 400px;
+    margin-bottom: -400px;
     margin-right: 0;
     padding: 30px;
     width: 100%;
